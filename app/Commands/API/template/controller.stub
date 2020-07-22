@@ -1,0 +1,179 @@
+<?php namespace App\Controllers;
+ 
+use App\Controllers\BaseResourceController;
+class {{controllerName}} extends BaseResourceController
+{
+    protected $modelName = 'App\Models\{{modelName}}';  
+
+     /**
+     * @OA\Get(
+     *     path="/{{routeName}}",
+     *     tags={"{{tag}}"},
+     *     summary="Find list {{tag}}",
+     *     description="Returns list of {{tag}}",
+     *     operationId="get{{tag}}",  
+     *     @OA\Parameter(
+     *         name="search",
+     *         in="query",
+     *         description="search by column defined",     
+     *         @OA\Schema(
+     *             type="array",     
+     *         )
+     *     ),   
+     *     @OA\Parameter(
+     *         name="page",
+     *         in="query",
+     *         description="page to show",     
+     *         @OA\Schema(
+     *             type="integer"     
+     *         )
+     *     ),   
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation",     
+     *         @OA\JsonContent(type="object",
+     *            @OA\Property(property="data",type="array",@OA\Items(ref="#/components/schemas/{{tag}}")),
+     *            @OA\Property(property="pagination",type="object",@OA\Property(property="currentPage", type="integer"),@OA\Property(property="totalPage", type="integer")),
+     *         ),
+     *         @OA\XmlContent(type="object",
+     *            @OA\Property(property="data",type="array",@OA\Items(ref="#/components/schemas/{{tag}}")),
+     *            @OA\Property(property="pagination",type="array",@OA\Items(ref="#/components/schemas/{{tag}}")),
+     *         ),           
+     *     ),     
+     *     @OA\Response(
+     *         response=404,
+     *         description="{{tag}} not found"
+     *     ),
+     *     security={
+     *         {"bearer_auth": {}}
+     *     }
+     * )
+     *     
+     */
+
+    /**
+     * @OA\Get(
+     *     path="/{{routeName}}/{id}",
+     *     tags={"{{tag}}"},
+     *     summary="Find {{tag}} by ID",
+     *     description="Returns a single {{tag}}",
+     *     operationId="get{{tag}}ById",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="ID of {{tag}} to return",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer",
+     *             format="int64"
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/{{tag}}"),
+     *         @OA\XmlContent(ref="#/components/schemas/{{tag}}"),
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid ID supplier"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="{{tag}} not found"
+     *     ),
+     *     security={
+     *         {"bearer_auth": {}}
+     *     }
+     * )
+     *     
+     */
+
+    /**
+     * @OA\Post(
+     *     path="/{{routeName}}",
+     *     tags={"{{tag}}"},
+     *     summary="Add a new {{tag}} to the store",
+     *     operationId="add{{tag}}",
+     *     @OA\Response(
+     *         response=201,
+     *         description="Created {{tag}}",
+     *         @OA\JsonContent(ref="#/components/schemas/{{tag}}"),
+     *         @OA\XmlContent(ref="#/components/schemas/{{tag}}"),
+     *     ),
+     *     @OA\Response(
+     *         response=405,
+     *         description="Invalid input"
+     *     ),
+     *     security={
+     *         {"bearer_auth": {}}
+     *     },     
+     *     requestBody={"$ref": "#/components/requestBodies/{{tag}}"}
+     * )
+     */
+
+    /**
+     * @OA\Put(
+     *     path="/{{routeName}}/{id}",
+     *     tags={"{{tag}}"},
+     *     summary="Update an existing {{tag}}",
+     *     operationId="update{{tag}}",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="{{tag}} id to update",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer",
+     *             format="int64"
+     *         ),
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid ID supplied"
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="{{tag}} not found"
+     *     ),
+     *     @OA\Response(
+     *         response=405,
+     *         description="Validation exception"
+     *     ),
+     *     security={
+     *         {"bearer_auth": {}}
+     *     },     
+     *     requestBody={"$ref": "#/components/requestBodies/{{tag}}"}
+     * )
+     */
+
+    /**
+     * @OA\Delete(
+     *     path="/{{routeName}}/{id}",
+     *     tags={"{{tag}}"},
+     *     summary="Deletes a {{tag}}",
+     *     operationId="delete{{tag}}",     
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="{{tag}} id to delete",
+     *         required=true,
+     *         @OA\Schema(
+     *             type="integer",
+     *             format="int64"
+     *         ),
+     *     ),
+     *     @OA\Response(
+     *         response=400,
+     *         description="Invalid ID supplied",
+     *     ),
+     *     @OA\Response(
+     *         response=404,
+     *         description="Pet not found",
+     *     ),
+     *     security={
+     *         {"bearer_auth": {}}
+     *     },
+     * )
+     */
+} 
