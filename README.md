@@ -23,4 +23,13 @@ If there is no error, system will generate for you controller, model and entity 
 
 ## Preview
 
+[![Install easyAPI](http://img.youtube.com/vi/82tYxswCU0I/0.jpg)](http://www.youtube.com/watch?v=82tYxswCU0I "Install easyAPI")
 ![API Docs Preview](preview/apidocs.png)
+
+## Copyright
+
+easyApi dikembangkan dan dimaintain oleh [asligresik](https://github.com/pandigresik)
+
+## Lisensi
+
+Lisensi dari easyApi adalah [MIT License](LICENSE) namun proyek yang dibangun menyeseuaikan dengan kebijakan masing-masing
