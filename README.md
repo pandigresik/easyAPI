@@ -20,3 +20,7 @@ If there is no error, system will generate for you controller, model and entity 
 - [X] Last you must add new route will display in last command.
 - [X] Generate api.yaml using command `./vendor/bin/openapi -o ./public/assets/api.yaml ./app` to show API docs using swagger
 - [X] Open API documentation in http://localhost:8080/swagger
+
+## Preview
+
+![API Docs Preview](preview/apidocs.png)
