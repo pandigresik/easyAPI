@@ -17,7 +17,7 @@ class {{controllerName}} extends BaseResourceController
      *         in="query",
      *         description="search by column defined",     
      *         @OA\Schema(
-     *             type="array",     
+     *             type="string",  
      *         )
      *     ),   
      *     @OA\Parameter(
