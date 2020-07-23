@@ -17,7 +17,10 @@ use CodeIgniter\Config\Services as CoreServices;
  */
 class Services extends CoreServices
 {
-
+	public static function getSecretKey()
+	{
+		return 'tapeketan';
+	}
 	//    public static function example($getShared = true)
 	//    {
 	//        if ($getShared)
@@ -26,5 +29,5 @@ class Services extends CoreServices
 	//        }
 	//
 	//        return new \CodeIgniter\Example();
-	//    }
+	//    }	
 }
