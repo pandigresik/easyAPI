@@ -79,8 +79,9 @@ out more about Swagger at
 	public function index()
 	{
 		$search = $this->request->getGet('search');
-		$page = $this->request->getGet('page') ?? 1;				
-		$data = $this->model->search($search)->paginate($this->limit, 'default', $page);
+		$page = $this->request->getGet('page') ?? 1;
+		$limit = $this->request->getGet('limit') ?? $this->limit;				
+		$data = $this->model->search($search)->paginate($limit, 'default', $page);
 		$pagination = [
 			'currentPage' => $this->model->pager->getCurrentPage(),
 			'totalPage' => $this->model->pager->getPageCount(),

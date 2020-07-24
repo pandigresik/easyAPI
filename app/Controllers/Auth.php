@@ -68,6 +68,7 @@ class Auth extends ResourceController
             $payload = [
                 'aud' => 'http://localhost:8080',
                 'iat' => 1356999524,
+                'email' => $email,
                 'nbf' => 1357000000,
             ];
 

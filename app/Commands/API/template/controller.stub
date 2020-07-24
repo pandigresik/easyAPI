@@ -17,7 +17,7 @@ class {{controllerName}} extends BaseResourceController
      *         in="query",
      *         description="search by column defined",     
      *         @OA\Schema(
-     *             type="string",  
+     *             type="object"              
      *         )
      *     ),   
      *     @OA\Parameter(
@@ -25,7 +25,15 @@ class {{controllerName}} extends BaseResourceController
      *         in="query",
      *         description="page to show",     
      *         @OA\Schema(
-     *             type="integer"     
+     *             type="int32"     
+     *         )
+     *     ),
+     *     @OA\Parameter(
+     *         name="limit",
+     *         in="query",
+     *         description="count data display per page",     
+     *         @OA\Schema(
+     *             type="int32"     
      *         )
      *     ),   
      *     @OA\Response(
