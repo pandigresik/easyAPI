@@ -222,7 +222,7 @@ class Generator extends BaseCommand
 			'modelName' => $dataSource['modelName'],
 			'tableName' => $dataSource['tableName'],
 			'entityName' => $dataSource['entityName'],
-			'primaryKey' => 'id',
+			'primaryKey' => $dataSource['primaryKey'],
 			'allowFields' => $dataSource['allowFields'],
 			'validationRules' => $dataSource['validationRules']			
 		];
