@@ -25,12 +25,12 @@ If there is no error, system will generate for you controller, model and entity 
 
 ## Video demo installation
 [![Install easyAPI](http://img.youtube.com/vi/82tYxswCU0I/0.jpg)](http://www.youtube.com/watch?v=82tYxswCU0I "Install easyAPI")
-
+## Video swagger documentation generate by easyAPI
+[![Test swagger documentation generate by easyAPI](http://img.youtube.com/vi/T7V0ft0dSG0/0.jpg)](http://www.youtube.com/watch?v=T7V0ft0dSG0 "Test swagger documentation generate by easyAPI")
 ## Preview
 ![API Docs Preview](preview/apidocs.png)
 
 ## Todo
-- [X] create demo video testing using swagger
 - [X] create example using this application
 
 ## Copyright
