@@ -4,8 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39cb45fdc2d1de108e1691ce1c717bc4",
+    "content-hash": "24d9e5ee8445aa02d5c3de8430140e5c",
     "packages": [
+        {
+            "name": "asligresik/easyapi",
+            "version": "v0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pandigresik/packagist-easyapi.git",
+                "reference": "c42e5b173d42a751127ca535e056c63eeb563d38"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pandigresik/packagist-easyapi/zipball/c42e5b173d42a751127ca535e056c63eeb563d38",
+                "reference": "c42e5b173d42a751127ca535e056c63eeb563d38",
+                "shasum": ""
+            },
+            "require": {
+                "codeigniter4/framework": "^4",
+                "php": ">=7.2",
+                "zircote/swagger-php": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "asligresik\\easyapi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ahmad",
+                    "email": "ahmad.afandi85@gmail.com"
+                }
+            ],
+            "description": "REST API generator for Codeigniter 4",
+            "time": "2020-09-01T08:50:26+00:00"
+        },
         {
             "name": "codeigniter4/framework",
             "version": "v4.0.4",
