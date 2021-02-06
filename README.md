@@ -23,6 +23,9 @@ If there is no error, system will generate for you controller, model and entity 
 - Generate api.json using command `./vendor/bin/openapi -o ./public/assets/api.json ./app` to show API docs using swagger using datasource format json (optional)
 - Open API documentation in http://localhost:8080/swagger
 
+## Example case 
+- join with other table, you can look at [ArtikelKategoriModel.php](https://github.com/pandigresik/easyAPI/blob/master/app/Models/ArtikelKategoriModel.php)
+
 ## Video demo installation
 [![Install easyAPI](http://img.youtube.com/vi/82tYxswCU0I/0.jpg)](http://www.youtube.com/watch?v=82tYxswCU0I "Install easyAPI")
 ## Video swagger documentation generate by easyAPI
