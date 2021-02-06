@@ -9,7 +9,7 @@
 		"codeigniter4/framework": "^4",
 		"zircote/swagger-php": "^3.0",
 		"firebase/php-jwt": "^5.2",
-		"asligresik/easyapi": "^0.0"
+		"asligresik/easyapi": "^0.0.2"
 	},
 	"require-dev": {
 		"fzaninotto/faker": "^1.9@dev",
