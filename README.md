@@ -25,6 +25,17 @@ If there is no error, system will generate for you controller, model and entity 
 
 ## Example case 
 - join with other table, you can look at [ArtikelKategoriModel.php](https://github.com/pandigresik/easyAPI/blob/master/app/Models/ArtikelKategoriModel.php)
+- example parameter in swagger for order data *{"order":[{"id":"desc"},{"tgl_upload":"asc"}]}*
+- example parameter in swagger for search data *{"search":[{"id_kategori":1}]}*
+- example parameter in swagger for search range data *{"search":[{"tgl_upload":{"start":"2016-01-01", "end":"2020-01-01"} }]}*
+- example parameter in swagger for search using like *{"search":[{"judul":"membangun%25"}]}* or *{"search":[{"judul":"%25membangun%25"}]}* use `%25` not `%` you can place `%25` on before, after and combination before and after as your keyword to search data 
+- search data based on column name *{base_url}/artikels?search[id_kategori]=1*
+- order data based on column name *{base_url}/artikels?order[id]=desc&order[tgl_upload]=asc*
+- search and order data based on column name *{base_url}/artikels?search[id_kategori]=1&order[id]=desc&order[tgl_upload]=asc*
+- search with pagination *{base_url}/artikels?page=1&limit=10*
+- search and order with pagination *{base_url}/artikels?search[id_kategori]=1&order[id]=desc&order[tgl_upload]=asc&page=1&limit=10*
+- search using between operator if we want filter data based range of date or etc *{base_url}/artikels?search[tgl_upload][start]=2016-01-01&search[tgl_upload][end]=2020-01-01*
+- search using keyword *{base_url}/artikels?search[judul]=membangun%25* or *{base_url}/artikels?search[judul]=%25membangun%25* will produce like operator on query
 
 ## Video demo installation
 [![Install easyAPI](http://img.youtube.com/vi/82tYxswCU0I/0.jpg)](http://www.youtube.com/watch?v=82tYxswCU0I "Install easyAPI")

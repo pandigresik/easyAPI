@@ -19,7 +19,15 @@ class Kategoris extends BaseResourceController
      *         @OA\Schema(
      *             type="object"              
      *         )
-     *     ),   
+     *     ),
+     *     @OA\Parameter(
+     *         name="order",
+     *         in="query",
+     *         description="order by column defined",     
+     *         @OA\Schema(
+     *             type="object"              
+     *         )
+     *     ),    
      *     @OA\Parameter(
      *         name="page",
      *         in="query",
