@@ -4,6 +4,7 @@
 	"description": "CodeIgniter4 starter app",
 	"homepage": "https://codeigniter.com",
 	"license": "MIT",
+	"minimum-stability": "dev",
 	"require": {
 		"php": ">=7.2",
 		"codeigniter4/framework": "^4",
