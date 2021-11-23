@@ -1,0 +1,30 @@
+server {
+    listen 80;
+    listen [::]:80;
+
+    server_name almuhajirin.demasjid.test;
+
+    root  /data/docker/codeigniter4/easyAPI/domains/almuhajirin;
+    error_log /data/docker/codeigniter4/easyAPI/domains/almuhajirin/writable/logs/nginx-error.log error;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php$is_args$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+	fastcgi_param CI_ENVIRONMENT "production";
+        # With php-fpm:
+        fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+        # With php-cgi:
+        # fastcgi_pass 127.0.0.1:9000;
+    }
+
+    error_page 404 /index.php;
+
+    # deny access to hidden files such as .htaccess
+    location ~ /\. {
+        deny all;
+    }
+}

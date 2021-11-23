@@ -1,3 +1,6 @@
+[database]
 database = almuhajirin
 username = flectra
 password = flectra
+[app]
+baseURL = http://almuhajirin.demasjid.test
