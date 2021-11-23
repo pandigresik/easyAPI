@@ -1,0 +1,40 @@
+CRITICAL - 2021-11-21 17:00:22 --> SELECT *
+FROM "users"
+ LIMIT 10
+CRITICAL - 2021-11-21 20:02:31 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:04:04 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:04:38 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:04:49 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:04:51 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:05:07 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:05:30 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:05:32 --> Class 'DotEnv' not found
+#0 {main}
+CRITICAL - 2021-11-21 20:15:29 --> Attempt to assign property 'database' of non-object
+#0 /data/docker/codeigniter4/easyAPI/domains/almuhajirin/index.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 {main}
+CRITICAL - 2021-11-21 20:15:44 --> Attempt to assign property 'database' of non-object
+#0 /data/docker/codeigniter4/easyAPI/domains/almuhajirin/index.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 {main}
+CRITICAL - 2021-11-21 20:17:57 --> putenv() expects exactly 1 parameter, 2 given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/docker/codeigniter4/easyAPI/domains/almuhajirin/index.php(45): putenv()
+#2 {main}
+CRITICAL - 2021-11-21 20:29:43 --> Attempt to assign property 'database' of non-object
+#0 /data/docker/codeigniter4/easyAPI/domains/almuhajirin/index.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 {main}
+CRITICAL - 2021-11-21 21:23:06 --> array_merge(): Expected parameter 1 to be an array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/docker/codeigniter4/easyAPI/domains/almuhajirin/index.php(44): array_merge()
+#2 {main}
+CRITICAL - 2021-11-21 21:23:22 --> array_merge(): Expected parameter 1 to be an array, object given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /data/docker/codeigniter4/easyAPI/domains/almuhajirin/index.php(44): array_merge()
+#2 {main}
