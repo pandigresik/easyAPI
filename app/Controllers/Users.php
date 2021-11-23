@@ -1,17 +1,17 @@
 <?php namespace App\Controllers;
  
 use asligresik\easyapi\Controllers\BaseResourceController;
-class Artikels extends BaseResourceController
+class Users extends BaseResourceController
 {
-    protected $modelName = 'App\Models\ArtikelKategoriModel';  
+    protected $modelName = 'App\Models\UsersModel';  
 
      /**
      * @OA\Get(
-     *     path="/artikels",
-     *     tags={"Artikel"},
-     *     summary="Find list Artikel",
-     *     description="Returns list of Artikel",
-     *     operationId="getArtikel",  
+     *     path="/users",
+     *     tags={"Users"},
+     *     summary="Find list Users",
+     *     description="Returns list of Users",
+     *     operationId="getUsers",  
      *     @OA\Parameter(
      *         name="search",
      *         in="query",
@@ -48,17 +48,17 @@ class Artikels extends BaseResourceController
      *         response=200,
      *         description="successful operation",     
      *         @OA\JsonContent(type="object",
-     *            @OA\Property(property="data",type="array",@OA\Items(ref="#/components/schemas/Artikel")),
+     *            @OA\Property(property="data",type="array",@OA\Items(ref="#/components/schemas/Users")),
      *            @OA\Property(property="pagination",type="object",@OA\Property(property="currentPage", type="integer"),@OA\Property(property="totalPage", type="integer")),
      *         ),
      *         @OA\XmlContent(type="object",
-     *            @OA\Property(property="data",type="array",@OA\Items(ref="#/components/schemas/Artikel")),
-     *            @OA\Property(property="pagination",type="array",@OA\Items(ref="#/components/schemas/Artikel")),
+     *            @OA\Property(property="data",type="array",@OA\Items(ref="#/components/schemas/Users")),
+     *            @OA\Property(property="pagination",type="array",@OA\Items(ref="#/components/schemas/Users")),
      *         ),           
      *     ),     
      *     @OA\Response(
      *         response=404,
-     *         description="Artikel not found"
+     *         description="Users not found"
      *     ),
      *     security={
      *         {"bearer_auth": {}}
@@ -69,15 +69,15 @@ class Artikels extends BaseResourceController
 
     /**
      * @OA\Get(
-     *     path="/artikels/{id}",
-     *     tags={"Artikel"},
-     *     summary="Find Artikel by ID",
-     *     description="Returns a single Artikel",
-     *     operationId="getArtikelById",
+     *     path="/users/{id}",
+     *     tags={"Users"},
+     *     summary="Find Users by ID",
+     *     description="Returns a single Users",
+     *     operationId="getUsersById",
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
-     *         description="ID of Artikel to return",
+     *         description="ID of Users to return",
      *         required=true,
      *         @OA\Schema(
      *             type="integer",
@@ -87,8 +87,8 @@ class Artikels extends BaseResourceController
      *     @OA\Response(
      *         response=200,
      *         description="successful operation",
-     *         @OA\JsonContent(ref="#/components/schemas/Artikel"),
-     *         @OA\XmlContent(ref="#/components/schemas/Artikel"),
+     *         @OA\JsonContent(ref="#/components/schemas/Users"),
+     *         @OA\XmlContent(ref="#/components/schemas/Users"),
      *     ),
      *     @OA\Response(
      *         response=400,
@@ -96,7 +96,7 @@ class Artikels extends BaseResourceController
      *     ),
      *     @OA\Response(
      *         response=404,
-     *         description="Artikel not found"
+     *         description="Users not found"
      *     ),
      *     security={
      *         {"bearer_auth": {}}
@@ -107,15 +107,15 @@ class Artikels extends BaseResourceController
 
     /**
      * @OA\Post(
-     *     path="/artikels",
-     *     tags={"Artikel"},
-     *     summary="Add a new Artikel to the store",
-     *     operationId="addArtikel",
+     *     path="/users",
+     *     tags={"Users"},
+     *     summary="Add a new Users to the store",
+     *     operationId="addUsers",
      *     @OA\Response(
      *         response=201,
-     *         description="Created Artikel",
-     *         @OA\JsonContent(ref="#/components/schemas/Artikel"),
-     *         @OA\XmlContent(ref="#/components/schemas/Artikel"),
+     *         description="Created Users",
+     *         @OA\JsonContent(ref="#/components/schemas/Users"),
+     *         @OA\XmlContent(ref="#/components/schemas/Users"),
      *     ),
      *     @OA\Response(
      *         response=405,
@@ -124,20 +124,20 @@ class Artikels extends BaseResourceController
      *     security={
      *         {"bearer_auth": {}}
      *     },     
-     *     requestBody={"$ref": "#/components/requestBodies/Artikel"}
+     *     requestBody={"$ref": "#/components/requestBodies/Users"}
      * )
      */
 
     /**
      * @OA\Put(
-     *     path="/artikels/{id}",
-     *     tags={"Artikel"},
-     *     summary="Update an existing Artikel",
-     *     operationId="updateArtikel",
+     *     path="/users/{id}",
+     *     tags={"Users"},
+     *     summary="Update an existing Users",
+     *     operationId="updateUsers",
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
-     *         description="Artikel id to update",
+     *         description="Users id to update",
      *         required=true,
      *         @OA\Schema(
      *             type="integer",
@@ -150,7 +150,7 @@ class Artikels extends BaseResourceController
      *     ),
      *     @OA\Response(
      *         response=404,
-     *         description="Artikel not found"
+     *         description="Users not found"
      *     ),
      *     @OA\Response(
      *         response=405,
@@ -159,20 +159,20 @@ class Artikels extends BaseResourceController
      *     security={
      *         {"bearer_auth": {}}
      *     },     
-     *     requestBody={"$ref": "#/components/requestBodies/Artikel"}
+     *     requestBody={"$ref": "#/components/requestBodies/Users"}
      * )
      */
 
     /**
      * @OA\Delete(
-     *     path="/artikels/{id}",
-     *     tags={"Artikel"},
-     *     summary="Deletes a Artikel",
-     *     operationId="deleteArtikel",     
+     *     path="/users/{id}",
+     *     tags={"Users"},
+     *     summary="Deletes a Users",
+     *     operationId="deleteUsers",     
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
-     *         description="Artikel id to delete",
+     *         description="Users id to delete",
      *         required=true,
      *         @OA\Schema(
      *             type="integer",

@@ -5,9 +5,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Swagger UI</title>
-  <link rel="stylesheet" type="text/css" href="<?= base_url('assets/swagger/swagger-ui.css') ?>">
-  <link rel="icon" type="image/png" href="<?= base_url('assets/swagger/favicon-32x32.png') ?> sizes=" 32x32" />
-  <link rel="icon" type="image/png" href="<?= base_url('assets/swagger/favicon-16x16.png') ?> sizes=" 16x16" />
+  <base href="<?= base_url() ?>" />
+  <link rel="stylesheet" type="text/css" href="assets/swagger/swagger-ui.css">
+  <link rel="icon" type="image/png" href="assets/swagger/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/swagger/favicon-16x16.png" sizes="16x16" />
   <style>
     html {
       box-sizing: border-box;
@@ -31,13 +32,13 @@
 <body>
   <div id="swagger-ui"></div>
 
-  <script src="<?= base_url('assets/swagger/swagger-ui-bundle.js') ?>"> </script>
-  <script src="<?= base_url('assets/swagger/swagger-ui-standalone-preset.js') ?>"> </script>
+  <script src="assets/swagger/swagger-ui-bundle.js"> </script>
+  <script src="assets/swagger/swagger-ui-standalone-preset.js"> </script>
   <script>
     window.onload = function() {
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "<?= base_url('assets/api.yaml') ?>",
+        url: "assets/api.yaml",
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
