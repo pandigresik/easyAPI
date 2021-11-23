@@ -48,3 +48,4 @@ Events::on('pre_system', static function () {
         Services::toolbar()->respond();
     }
 });
+
