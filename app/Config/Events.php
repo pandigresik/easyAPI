@@ -32,9 +32,7 @@ Events::on('pre_system', static function () {
             ob_end_flush();
         }
 
-        ob_start(static function ($buffer) {
-            return $buffer;
-        });
+        ob_start(static fn ($buffer) => $buffer);
     }
 
     /*
@@ -48,4 +46,3 @@ Events::on('pre_system', static function () {
         Services::toolbar()->respond();
     }
 });
-
