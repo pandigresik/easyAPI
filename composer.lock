@@ -50,20 +50,19 @@
         },
         {
             "name": "codeigniter4/framework",
-            "version": "v4.2.10",
+            "version": "v4.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/framework.git",
-                "reference": "6ffad151a303c5817ad6b2d9b996d07960aff2cc"
+                "reference": "543dd5e5d3cadee764962712de29458b5524dd24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/6ffad151a303c5817ad6b2d9b996d07960aff2cc",
-                "reference": "6ffad151a303c5817ad6b2d9b996d07960aff2cc",
+                "url": "https://api.github.com/repos/codeigniter4/framework/zipball/543dd5e5d3cadee764962712de29458b5524dd24",
+                "reference": "543dd5e5d3cadee764962712de29458b5524dd24",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
                 "ext-intl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
@@ -75,13 +74,14 @@
             "require-dev": {
                 "codeigniter/coding-standard": "^1.5",
                 "fakerphp/faker": "^1.9",
-                "friendsofphp/php-cs-fixer": "~3.13.0",
+                "friendsofphp/php-cs-fixer": "3.13.0",
                 "mikey179/vfsstream": "^1.6",
                 "nexusphp/cs-config": "^3.6",
                 "phpunit/phpunit": "^9.1",
                 "predis/predis": "^1.1 || ^2.0"
             },
             "suggest": {
+                "ext-curl": "If you use CURLRequest class",
                 "ext-dom": "If you use TestResponse",
                 "ext-exif": "If you run Image class tests",
                 "ext-fileinfo": "Improves mime type detection for files",
@@ -116,11 +116,11 @@
             "description": "The CodeIgniter framework v4",
             "homepage": "https://codeigniter.com",
             "support": {
-                "forum": "http://forum.codeigniter.com/",
+                "forum": "https://forum.codeigniter.com/",
                 "slack": "https://codeigniterchat.slack.com",
                 "source": "https://github.com/codeigniter4/CodeIgniter4"
             },
-            "time": "2022-11-05T22:23:07+00:00"
+            "time": "2022-12-22T02:49:45+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -402,12 +402,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-escaper.git",
-                "reference": "95dc6f2fae7b52839e48bf3baf07b7037c65024c"
+                "reference": "853cfef65a1e0c49605e36a5859a9eb629d3934b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/95dc6f2fae7b52839e48bf3baf07b7037c65024c",
-                "reference": "95dc6f2fae7b52839e48bf3baf07b7037c65024c",
+                "url": "https://api.github.com/repos/laminas/laminas-escaper/zipball/853cfef65a1e0c49605e36a5859a9eb629d3934b",
+                "reference": "853cfef65a1e0c49605e36a5859a9eb629d3934b",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-12-03T00:24:36+00:00"
+            "time": "2022-12-20T00:27:30+00:00"
         },
         {
             "name": "psr/cache",
@@ -2400,5 +2400,5 @@
         "php": ">=7.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
