@@ -9,7 +9,7 @@
 		"php": ">=7.2",
 		"codeigniter4/framework": "^4",
 		"zircote/swagger-php": "^3.0",
-		"firebase/php-jwt": "^5.2",
+		"firebase/php-jwt": "^6.0",
 		"asligresik/easyapi": "^0.0"
 	},
 	"require-dev": {
